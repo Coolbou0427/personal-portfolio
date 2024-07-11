@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #5C80BC;
+    --secondary-color: #2E3138;
+    --accent1-color: #EDF2F4;
+    --accent2-color: #60463B;
+    --heading-font: "PT Serif", serif;
+    --paragraph-font: "PT Serif", serif;
+    --headline-color-on-white: black;
+    --headline-color-on-color: #60463B;
+    --paragraph-color-on-white: #2E3138;
+    --paragraph-color-on-color: #EDF2F4;
+    --paragraph-background-color: #EDF2F4;
+    --nav-link-color: #5C80BC;
+    --nav-background-color: #5C80BC;
+    --nav-hover-link-color: #60463B;
+    --nav-hover-background-color: #60463B;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: var(--secondary-color);
+  }
+  
+  #logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+    height: 100px;
+    padding-left: 5px;
+  }
+  
+  nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+  }
+  
+  nav a:hover {
+    background-color: var(--accent1-color);
+    color: #258EA6;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex: 1;
+    padding: 20px;
+  }
+
+  #background {
+    background-color: #5C80BC;
+  }
+  
+  #me, #desk {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
+
+  .big-img {
+    height: 500px;
+  }
+  
+  #me {
+    grid-row: 1 / 2;
+  }
+  
+  #desk {
+    grid-row: 2 / 3;
+  }
+  
+  main p {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: var(--secondary-color);
+    color: black;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer p {
+    font-size: 24px;
+    color: black;
+  }
+  
+  footer a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .social img {
+    width: 80px;
+    padding-top: 15px;
+  }
+  
