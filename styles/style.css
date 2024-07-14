@@ -12,10 +12,12 @@
   --paragraph-color-on-white: #2E3138;
   --paragraph-color-on-color: #EDF2F4;
   --paragraph-background-color: #EDF2F4;
-  --nav-link-color: #5C80BC;
+  --nav-link-color: #60463B;
   --nav-background-color: #5C80BC;
-  --nav-hover-link-color: #60463B;
-  --nav-hover-background-color: #60463B;
+  --nav-hover-link-color: #5C80BC;
+  --nav-hover-background-color: #EDF2F4;
+  --nav-link-background-color: #5C80BC;
+  --nav-box-shadow-color: #EDF2F4;
 }
 
 * {
@@ -51,20 +53,37 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
+  align-items: center;
   font-size: 24px;
 }
 
 nav a {
   text-align: center;
-  color: black;
+  color: var(--nav-link-color);
   text-decoration: none;
-  padding: 35px;
+  padding: 15px 25px;
+  background-color: var(--nav-link-background-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px var(--nav-box-shadow-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+  top: -2.5px;
 }
 
 nav a:hover {
-  background-color: var(--accent1-color);
-  color: #258EA6;
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+nav a:active {
+  background-color: var(--nav-hover-background-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #homepage, #aboutme-page {
@@ -124,4 +143,33 @@ footer a:hover {
 .social img {
   width: 80px;
   padding-top: 15px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: var(--nav-link-color);
+  background-color: var(--nav-link-background-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px var(--nav-box-shadow-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.button:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+.button:active {
+  background-color: var(--nav-hover-background-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
