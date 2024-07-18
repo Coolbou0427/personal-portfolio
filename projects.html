@@ -10,7 +10,7 @@
 <body>
     <header>
         <a id="logo" href="index.html">
-            <img src="images/site-logo.png" alt="site logo">
+            <img id="logo_link" src="images/site-logo.png" alt="site logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
@@ -18,40 +18,41 @@
             <a href="projects.html">Projects</a>
         </nav>
     </header>
-
-    <main>
-        <h3>Experience And Projects</h3>
+    <div id="background">
+    <main id="projects-page">
+        <h1 id="title-text" class="centered-text">Experience And Projects</h3>
+        <br>
+        <h2 class="centered-text">Experience</h2>
+        <br>
         <p>
-            Experience
-
-            Setting up, running, updating, and otherwise maintaining dedicated game servers for over 20 people to use at a time. 
+            Setting up, running, updating, and otherwise maintaining dedicated game servers that saw over 20 concurrent users at one given moment. 
             Setting up a network of virtual machines and servers with group policy, a firewall, and network rules through the use of a domain controller. 
             Creating an executable with several hundred lines of code that makes use of different APIs and attributes of another program for use in a larger program.
             Created a program to run on my personal computer on boot that monitors certain levels to make sure that it's all in normal range, and to take action if something goes wrong without me noticing. 
             Changing values in the registry editor for many different reasons to help fix an issue or make something work.
             Helping others with various sorts of tech related problems on different kinds of devices including removing malware and fixing physical component issues. 
-
-            Projects
-
-            Random Item Minigame
-            This is a piece of software that I wrote that hooks into a game that I play to listen for a couple commands that I wrote. Go, Halt, and ricsettings. When the Go command is sent, the program executes a list of commands to start the game and setup the settings, and then uses a custom random generator to randomly give each player a random item that they can use to kill the other player or escape from someone coming after them. Every 15 seconds by default it gives you a new drop from the massive list of items that could be very useful in a fight. I have developed many different features and updates to capabilities in settings for more customizability for the user. 
-
-            Maintenance Program
-            I have this program that runs on my computer in the background where it checks periodically through the list of tasks running on my computer. I made this because I noticed that my computer would often crash because of a system task taking up too much memory. To combat this, the program looks for the task that is using the unusual amount of memory and kills it before it crashes my computer. This is only a Band-Aid fix for now, but I will say that it has worked quite well. Once I fix the root issue I will not need or use this program. However the way it works, it doesn't really effect me because it doesn't use a lot of system resources to run, so it should always work without issue to performance. 
-
-            Keyboard Logger/Monitor
-            This program was something I made for my little brother to make sure that he wasn't looking up anything that he shouldn't be. This program checks through the words that he types and compares it to a wordlist that I found and added onto. If any of the words in the wordlist are found in the file it creates whenever he types, it will promptly send an email to me, alerting me to the word, as well as the context in which it was typed. 
         </p>
-        <p>Images for the Page 3</p>
-            <img src="images/ramwarning.png" alt="screenshot of code for the maintenance program">
-            <img src="images/randomitemchallenge.png" alt="proof of the game in action">
+        <br>
+        <h2 class="centered-text">Projects</h2>
+        <br>
+
+        <h4 class="project-title">Random Item Minigame</h4>
+        <p class="project-description">This is a piece of software that I wrote that hooks into a game that I play to listen for a couple commands that I wrote. Go, Halt, and ricsettings. When the Go command is sent, the program executes a list of commands to start the game and setup the settings, and then uses a custom random generator to randomly give each player a random item that they can use to kill the other player or escape from someone coming after them. Every 15 seconds by default it gives you a new drop from the massive list of items that could be very useful in a fight. I have developed many different features and updates to capabilities in settings for more customizability for the user. </p>
+
+        <h4 class="project-title">Maintenance Program</h4>
+        <p class="project-description">I have this program that runs on my computer in the background where it checks periodically through the list of tasks running on my computer. I made this because I noticed that my computer would often crash because of a system task taking up too much memory. To combat this, the program looks for the task that is using the unusual amount of memory and kills it before it crashes my computer. This is only a Band-Aid fix for now, but I will say that it has worked quite well. Once I fix the root issue I will not need or use this program. However the way it works, it doesn't really effect me because it doesn't use a lot of system resources to run, so it should always work without issue to performance. </p>
+
+        <h4 class="project-title">Keyboard Logger/Monitor</h4>
+        <p class="project-description">This program was something I made for my little brother to make sure that he wasn't looking up anything that he shouldn't be. This program checks through the words that he types and compares it to a wordlist that I found and added onto. If any of the words in the wordlist are found in the file it creates whenever he types, it will promptly send an email to me, alerting me to the word, as well as the context in which it was typed. </p>
+        <img class="big-img" src="images/ramwarning.png" alt="screenshot of code for the maintenance program">
+        <img class="big-img" src="images/randomitemchallenge.png" alt="proof of the game in action">
 
     </main>
-    
+    </div>
     <footer>
         <p>Personal Portfolio &copy; 2024 - Jaxon Terrill</p>
-        <p><a href="site-plan-rafting.html">Site Plan</a></p>
-        <a href="https://github.com" target="_blank">
+        <p><a class="button" href="site-plan.html">Site Plan</a></p>
+        <a class="social" href="https://github.com/Coolbou0427?tab=repositories" target="_blank">
             <img src="images/github-logo.webp" alt="Github icon">
         </a>
     </footer>

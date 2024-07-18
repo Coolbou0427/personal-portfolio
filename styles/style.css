@@ -3,21 +3,21 @@
 :root {
   --primary-color: #5C80BC;
   --secondary-color: #2E3138;
-  --accent1-color: #EDF2F4;
-  --accent2-color: #60463B;
+  --accent1-color: #C2EFB3;
+  --accent2-color: #717744;
   --heading-font: "PT Serif", serif;
   --paragraph-font: "PT Serif", serif;
   --headline-color-on-white: black;
-  --headline-color-on-color: #60463B;
-  --paragraph-color-on-white: #2E3138;
-  --paragraph-color-on-color: #EDF2F4;
-  --paragraph-background-color: #EDF2F4;
-  --nav-link-color: #60463B;
-  --nav-background-color: #5C80BC;
-  --nav-hover-link-color: #5C80BC;
-  --nav-hover-background-color: #EDF2F4;
-  --nav-link-background-color: #5C80BC;
-  --nav-box-shadow-color: #EDF2F4;
+  --headline-color-on-color: var(--accent2-color);
+  --paragraph-color-on-white: var(--secondary-color);
+  --paragraph-color-on-color: var(--accent1-color);
+  --paragraph-background-color: var(--accent1-color);
+  --nav-link-color: black;
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: black;
+  --nav-hover-background-color: var(--accent1-color);
+  --nav-link-background-color: var(--primary-color);
+  --nav-box-shadow-color: var(--accent1-color);
 }
 
 * {
@@ -86,14 +86,14 @@ nav a:active {
   transform: translateY(4px);
 }
 
-#homepage, #aboutme-page {
+#homepage, #aboutme-page, #projects-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  align-items: flex-start;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   flex: 1;
 }
 
@@ -103,6 +103,7 @@ nav a:active {
 }
 
 .big-img {
+  align-self: center;
   height: 500px;
 }
 
@@ -127,7 +128,7 @@ footer {
 
 footer p {
   font-size: 24px;
-  color: black;
+  color: white;
 }
 
 footer a {
@@ -162,6 +163,25 @@ footer a:hover {
   justify-content: center;
   height: 50px;
 }
+
+.centered-text {
+  text-align: center;
+  align-self: center;
+}
+
+#experience-heading {
+  text-align: center;
+}
+
+.project-title, .project-description {
+  text-align: left;
+}
+
+.project-title {
+  
+}
+
+
 
 .button:hover {
   background-color: var(--nav-hover-background-color);

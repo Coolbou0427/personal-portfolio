@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #264653   ;
-  --secondary-color: #BEB64B ;
-  --accent1-color: #2A9D8F;
-  --accent2-color: #E76F51;
+  --primary-color: #5C80BC   ;
+  --secondary-color: #2E3138 ;
+  --accent1-color: #EDF2F4;
+  --accent2-color: #60463B;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Open Sans";
@@ -135,6 +135,12 @@ nav a:hover {
     ". left left right right ."
     "page2 page2 . . page3 page3";
 }
+
+img {
+  max-height: 800px;
+  max-width: 600px;
+}
+
 .sitemap > div {
 
   text-align: center;
